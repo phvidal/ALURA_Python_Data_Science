@@ -26,3 +26,23 @@ elif valor_carro_03 < valor_baixo and valor_carro_03 < valor_carro_02:
     print(f'O valor mais baixo é o {valor_carro_03} correspondente ao terceiro ano.')
 else:
     print(f'O valor mais baixo é o {valor_carro_01} correspondente ao primeiro ano.')
+
+# ano_01 = float(input('Digite o valor do carro nesse ano (apenas números):'))
+# ano_02 = float(input('Digite o valor do carro nesse ano (apenas números):'))
+# ano_03 = float(input('Digite o valor do carro nesse ano (apenas números):'))
+
+# Resolução ALURA
+# maior = ano_01
+# if ano_02 > maior:
+#   maior = ano_02
+# if ano_03 > maior:
+#   maior = ano_03
+
+# menor = ano_01
+# if ano_02 < menor:
+#   menor = ano_02
+# if ano_03 < menor:
+#   menor = ano_03
+
+# print(f'O maior valor foi: {maior}')
+# print(f'O menor valor foi: {menor}')
