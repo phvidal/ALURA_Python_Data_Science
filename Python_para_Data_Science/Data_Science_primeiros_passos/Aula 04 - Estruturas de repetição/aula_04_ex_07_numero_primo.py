@@ -33,4 +33,4 @@ if num > 1:
     else:
         print(f'{num} é um número primo')
 else:
-    print(f'{num} não é um número primo')
+    print(f'O {num} não é um número primo!!!!')
