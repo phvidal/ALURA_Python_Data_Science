@@ -12,15 +12,28 @@ Retorne a média para apresentar o texto: "Nota da manobra: [media]"
 notas = []
 
 for nota in range(0, 5):
-    nota = input('Digite sua nota: ')
+    nota = float(input('Digite sua nota: '))
     notas.append(nota)
 
-menor_nota = min(notas)
-maior_nota = max(notas)
-print(f'Essa é a menor nota: {menor_nota}')
-print(f'Essa é a maior nota: {maior_nota}')
+def media_notas(lista):
+    menor_nota = min(notas)
+    maior_nota = max(notas)
+    print(f'Essa é a menor nota: {menor_nota}')
+    print(f'Essa é a maior nota: {maior_nota}')
 
+    notas.remove(min(notas))
+    notas.remove(max(notas))
+    print(f'Essas são as notas válidas para essa manobra: {notas}')
+    return sum(notas) / len(notas)
 
-notas.remove(menor_nota)
+teste = media_notas(notas)
+print(f'Nota da manobra: {teste:.2f}')
 
-print(notas)
+# def media(lista):
+#   lista.remove(max(lista))
+#   lista.remove(min(lista))
+#   return sum(lista) / len(lista)
+
+# teste = media(notas)
+# print(teste)
+
